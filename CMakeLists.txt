@@ -5,7 +5,8 @@ project(SimpleLogger LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_library(SimpleLogger logger.h logger.cpp)
+add_library(SimpleLogger src/logger.h
+                         src/logger.cpp)
 
 target_include_directories(SimpleLogger INTERFACE .)
 
